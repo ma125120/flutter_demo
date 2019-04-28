@@ -142,10 +142,16 @@ class _MyTabViewState extends State<MyTabView> with AutomaticKeepAliveClientMixi
         slivers: <Widget>[
           SliverAppBar(
             floating: true,
-            expandedHeight: 100.0,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text('${widget.tab.name}'),
-            ),
+            expandedHeight: 200.0,
+            // flexibleSpace: FlexibleSpaceBar(
+            //   title: Text('${widget.tab.name}'),
+            // ),
+            flexibleSpace: Container(
+              child: Image.network(
+                'https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png',
+                fit: BoxFit.cover,
+              ),
+            )
           ),
 
           SliverPadding(
