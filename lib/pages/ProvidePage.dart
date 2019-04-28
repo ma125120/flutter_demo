@@ -12,6 +12,42 @@ class ProvidePage extends StatefulWidget {
 class _ProvidePageState extends State<ProvidePage> {
   String _name;
 
+  Widget _hybridGridRow() {
+    return Row(children: <Widget>[
+      Expanded(
+        // height: 200.0,
+        // width: 200.0,
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 2.0,
+          mainAxisSpacing: 10.0,
+          shrinkWrap: true,
+          children: <Widget>[
+            _gridItem(),
+            _gridItem(),
+            _gridItem(),
+            _gridItem(),
+          ],
+        ),
+      ),
+
+      Container(
+        width: 100.0,
+        height: 200.0,
+        decoration: BoxDecoration(
+          color: Colors.orange,
+        ),
+      ),
+    ],);
+  }
+
+  Widget _gridItem() {
+    return Column(children: <Widget>[
+      Icon(Icons.home, color: Colors.blue),
+      Text('主页'),
+    ],);
+  }
+
   @override
   Widget build(BuildContext context) {
     final currentUserInfo = Provide.value<UserInfo>(context);
@@ -43,7 +79,8 @@ class _ProvidePageState extends State<ProvidePage> {
           onPressed: () {
             currentUserInfo.setName(_name);
           },
-        )
+        ),
+        _hybridGridRow()
       ],
     );
   }
