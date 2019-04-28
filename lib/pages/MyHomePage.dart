@@ -6,7 +6,7 @@ import './MyProfile.dart';
 import './IconList.dart';
 import './HomeTab.dart';
 import './AsyncTabs.dart';
-
+import './ProvidePage.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
@@ -20,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _widgetOptions = [
     AsyncTabs(),
     IconList(),
-    MyProfile(),
+    ProvidePage(),
     HomeTab(),
   ];
 
@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('主页')),
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('图标')),
-        BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text('个人中心')),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text('状态')),
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('tab页')),
       ],
       currentIndex: _selectedIndex,
