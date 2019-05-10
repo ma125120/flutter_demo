@@ -8,7 +8,7 @@ import './models/UserInfo.dart';
 
 void main() {
   final providers = Providers()
-      ..provide(Provider.function((context) => UserInfo('初始姓名')));
+      ..provide(Provider.function((context) => UserInfo('初始姓名12')));
 
   runApp(
     ProviderNode(
