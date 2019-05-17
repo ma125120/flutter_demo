@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class GradientButton extends StatelessWidget {
   GradientButton({
     this.colors,
+    this.color,
+    this.isLinear = false,
     this.width,
-    this.height,
+    this.height = 44.0,
     this.onTap,
     this.radius,
     this.shadow,
@@ -13,9 +15,12 @@ class GradientButton extends StatelessWidget {
 
   // 渐变色数组
   final List<Color> colors;
+  final Color color;
 
   final double radius;
   final BoxShadow shadow;
+
+  final bool isLinear;
 
   // 按钮宽高
   final double width;
@@ -36,13 +41,14 @@ class GradientButton extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: _colors),
+        color: isLinear ? null : color,
+        gradient: isLinear ? LinearGradient(colors: _colors) : null,
         borderRadius: BorderRadius.circular(radius ?? 3.0), //3像素圆角
         boxShadow: [ //阴影
           shadow ?? BoxShadow(
             color:Colors.black54,
-            offset: Offset(2.0, 2.0),
-            blurRadius: 4.0
+            offset: Offset(0.0, 0.0),
+            blurRadius: 0.0
           )
         ]
       ),

@@ -20,15 +20,19 @@ class MyProfile extends StatelessWidget {
               GradientButton(
                 child: Text('渐变'),
                 colors: [ Colors.yellow[800], Colors.purple[800], ],
+                color: Color(0xFF7964E3),
                 radius: 20.0,
-                width: 200,
+                width: MediaQuery.of(context).size.width * 0.8,
                 onTap: () {
                   print('点击渐变按钮');
                 },
               ),
               Container(height: 20.0,),
-              CupertinoButton.filled(
+              CupertinoButton(
                 child: Text('个人中心'),
+                color: Color(0xFF7964E3),
+                // minSize: MediaQuery.of(context).size.width * 0.8,
+                borderRadius: BorderRadius.all(Radius.circular(100.0)),
                 onPressed: () {
                   showMyCustomLoadingDialog(context);
         //           showDialog(
