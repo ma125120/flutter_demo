@@ -3,12 +3,12 @@
 A new Flutter project.
 
 # screen shot
-![1](./screenshot/1.jpg)
-![2](./screenshot/2.jpg)
-![3](./screenshot/3.jpg)
-![4](./screenshot/4.jpg)
-![5](./screenshot/5.jpg)
-![6](./screenshot/6.jpg)
+<img src="./screenshot/1.jpg" style="width: 200px;" />
+<img src="./screenshot/2.jpg" style="width: 200px;" />
+<img src="./screenshot/3.jpg" style="width: 200px;" />
+<img src="./screenshot/4.jpg" style="width: 200px;" />
+<img src="./screenshot/5.jpg" style="width: 200px;" />
+<img src="./screenshot/6.jpg" style="width: 200px;" />
 
 ## Getting Started
 
