@@ -2,6 +2,14 @@
 
 A new Flutter project.
 
+# screen shot
+![1](./screenshot/1.jpg)
+![2](./screenshot/2.jpg)
+![3](./screenshot/3.jpg)
+![4](./screenshot/4.jpg)
+![5](./screenshot/5.jpg)
+![6](./screenshot/6.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
