@@ -3,12 +3,12 @@
 A new Flutter project.
 
 # screen shot
-<img src="./screenshot/1.jpg" style="width: 200px;" />
-<img src="./screenshot/2.jpg" style="width: 200px;" />
-<img src="./screenshot/3.jpg" style="width: 200px;" />
-<img src="./screenshot/4.jpg" style="width: 200px;" />
-<img src="./screenshot/5.jpg" style="width: 200px;" />
-<img src="./screenshot/6.jpg" style="width: 200px;" />
+<img src="./screenshot/1.jpg" width=200 />
+<img src="./screenshot/2.jpg" width=200 />
+<img src="./screenshot/3.jpg" width=200 />
+<img src="./screenshot/4.jpg" width=200 />
+<img src="./screenshot/5.jpg" width=200 />
+<img src="./screenshot/6.jpg" width=200 />
 
 ## Getting Started
 
